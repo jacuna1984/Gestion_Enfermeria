@@ -4,6 +4,19 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.titulo_index{
+  padding: 1em;
+  background-color: brown;
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.col-4{
+  margin-top: 3em;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -170,9 +183,33 @@ address {
   line-height: inherit;
 }
 
-ol,
 ul {
-  padding-left: 2rem;
+  list-style-type: none;
+  background-color: #DC7633;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul.menu li{
+  padding: 15px;
+}
+ul li{
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  float: left;
+  border-right: 1px solid #FDFEFE;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+li a:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 ol,
