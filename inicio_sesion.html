@@ -13,20 +13,17 @@
                 <img class="img-header" src="img/Logo-ISFD-Banderin-tricolor-01-500x500.png" width="130px" height="180px">
     </header>
     <div class="formusr">
-        <form>
-            <div class="form-group">
-                <label for="usr_name">Nombre de usuario</label>
-                <input type="text" id="usr_name" size="60em" placeholder="Tipear un nombre de usuario">
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="contraseña" size="60em" placeholder="Tipear una contraseña">
-            </div>
-            <hr>
+        <form action="datos.php" method="post">
             <div class="form-group">
                 <label for="dni">DNI</label>
                 <input type="text" id="dni" size="60em" placeholder="Tipear su DNI">
             </div>
+                <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="contraseña" size="60em" placeholder="Tipear una contraseña">
+            </div>
+            <hr>
+            
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" size="60em" placeholder="Tipear su nombre">
@@ -42,6 +39,14 @@
             <div class="form-group">
                 <label for="direccion">Dirección</label>
                 <input type="text" id="direccion" size="60em" placeholder="Tipear su domicilio">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" size="60em" placeholder="Tipear su telefono">
+            </div>
+            <div class="form-group">
+                <label for="fechanacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" size="60em" placeholder="Tipear su fecha de nacimiento">
             </div>
             <div class="form-group">
                 <label for="provincia">Provincia</label>
@@ -62,7 +67,7 @@
                 <option value="x1">Opcion X1</option>
             </select>
             <div class="form-group">
-                <label for="tipo_ecurrucl">Seleccione su espacio curricular</label>
+                <label for="ciclo_lectivo">Seleccione su ciclo lectivo</label>
             </div>
             <select id="tipo_ecurrucl">
                 <option value="x1">Opcion X1</option>
